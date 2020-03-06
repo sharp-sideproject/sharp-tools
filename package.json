@@ -2,7 +2,7 @@
   "name": "sharp-tools",
   "version": "0.0.1",
   "description": "A javascript toolkit by typescript.",
-  "main": "src/main.ts",
+  "main": "dist/bundle.js",
   "scripts": {
     "lint": "eslint src --fix --ext .ts"
   },
@@ -18,7 +18,9 @@
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dayjs": "^1.8.21"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
